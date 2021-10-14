@@ -1,3 +1,12 @@
+:root {
+  --bkg-accent: #296ACA;
+  --bkg-neutral-light: #EAEEF1;
+  --bkg-neutral-dark: #DDDDDD;
+  --border-accent: #CFCFCF;
+  --font-light: white;
+  --font-dark: black;
+}
+
 body {
   display: flex;
   flex-wrap: wrap;
@@ -11,18 +20,18 @@ section {
 }
 
 .header {
-  background-color: #296ACA;
+  background-color: var(--bkg-accent);
   padding-top: 5em;
-  color: white;
+  color: var(--font-light);
   line-height: 0.5em;
 }
 
 .today li {
-  background-color: #EAEEF1;
+  background-color: var(--bkg-neutral-light);
   list-style:none;
   padding: 1em;
   margin-top: 1em;
-  border: 1px solid #CFCFCF;
+  border: 1px solid var(--border-accent);
   border-radius: 5px;
 }
 
@@ -31,7 +40,7 @@ section {
 }
 
 .upcoming {
-  background-color: #EAEEF1;
+  background-color: var(--bkg-neutral-light);
 }
 
 .upcoming-card {
@@ -46,11 +55,11 @@ section {
   float: right;
   position: relative;
   top: -8em;
-  color: white;
+  color: var(--font-light);
 }
 
 .legal {
-  background-color: #DDDDDD;
+  background-color: var(--bkg-neutral-dark);
   text-align: center;
   height: 400px;
 }
