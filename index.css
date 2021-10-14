@@ -55,10 +55,10 @@ section {
   height: 400px;
 }
 
-@media all and (min-width: 800px) {
+@media screen and (min-width: 500px) {
 
   .today {
-    width: 60%;
+    width: 55%;
   }
 
   .upcoming {
