@@ -1,3 +1,4 @@
+/* Variables used for colours to make changes easier as the page grows in complexity */
 :root {
   --bkg-accent: #296ACA;
   --bkg-neutral-light: #EAEEF1;
@@ -13,11 +14,13 @@ body {
   background-color: var(--bkg-neutral-dark);
 }
 
+/* Flexbox used to provide flexible responsive design */
 .wrapper {
   display: flex;
   flex-wrap: wrap;
   margin: 0.5em;
   border-radius: 10px;
+  padding: 0;
 }
 
 section {
