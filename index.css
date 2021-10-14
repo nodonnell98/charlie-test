@@ -10,9 +10,10 @@
 }
 
 body {
-  overflow: hidden;
-  margin: 0 auto;
-  background-color: var(--bkg-neutral-dark);
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  margin: 0 auto; background-color: var(--bkg-neutral-dark);
 }
 
 /* Flexbox used to provide flexible responsive design */
@@ -22,6 +23,7 @@ body {
   margin: 0.5em;
   border-radius: 0.3em;
   padding: 0;
+  width: 100%;
 }
 
 section {
@@ -74,6 +76,7 @@ section {
 }
 
 .legal {
+  width: 100%;
   text-align: center;
 }
 
