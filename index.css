@@ -1,6 +1,7 @@
 /* Variables used for colours to make changes easier as the page grows in complexity */
 :root {
   --bkg-accent: #296ACA;
+  --bkg-white: white;
   --bkg-neutral-light: #EAEEF1;
   --bkg-neutral-dark: #DDDDDD;
   --border-accent: #CFCFCF;
@@ -19,7 +20,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0.5em;
-  border-radius: 10px;
+  border-radius: 0.3em;
   padding: 0;
 }
 
@@ -37,7 +38,7 @@ section {
 }
 
 .today {
-  background-color: white;
+  background-color: var(--bkg-white);
 }
 
 .today li {
@@ -46,7 +47,7 @@ section {
   padding: 1em;
   margin-top: 1em;
   border: 1px solid var(--border-accent);
-  border-radius: 5px;
+  border-radius: 0.3em;
 }
 
 .today ul {
@@ -58,14 +59,14 @@ section {
 }
 
 .upcoming-card {
-  background-color: white;
+  background-color: var(--bkg-white);
   padding: 1em;
 }
 
 .upcoming-card a {
   background-color: red;
   padding: 1em;
-  border-radius: 5px;
+  border-radius: 0.3em;
   float: right;
   position: relative;
   top: -8em;
@@ -76,8 +77,9 @@ section {
   text-align: center;
 }
 
-@media screen and (min-width: 500px) {
 
+@media screen and (min-width: 500px) {
+  /* These widths were chosen to avoid the red link button overlapping with text when approaching 500px */
   .today {
     width: 60%;
   }
