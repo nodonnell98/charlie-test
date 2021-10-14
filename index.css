@@ -8,9 +8,16 @@
 }
 
 body {
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: var(--bkg-neutral-dark);
+}
+
+.wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 0.5em;
+  border-radius: 10px;
 }
 
 section {
@@ -24,6 +31,10 @@ section {
   padding-top: 5em;
   color: var(--font-light);
   line-height: 0.5em;
+}
+
+.today {
+  background-color: white;
 }
 
 .today li {
@@ -59,9 +70,7 @@ section {
 }
 
 .legal {
-  background-color: var(--bkg-neutral-dark);
   text-align: center;
-  height: 400px;
 }
 
 @media screen and (min-width: 500px) {
