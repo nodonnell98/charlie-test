@@ -28,3 +28,24 @@ section {
 .today ul {
   padding: 0px;
 }
+
+.upcoming {
+  background-color: #EAEEF1;
+}
+
+.upcoming-card {
+  background-color: white;
+  padding: 1em;
+}
+
+.upcoming-card a {
+  background-color: red;
+  padding: 1em;
+  border-radius: 5px;
+  float: right;
+  position: relative;
+  top: -8em;
+  color: white;
+}
+
+
